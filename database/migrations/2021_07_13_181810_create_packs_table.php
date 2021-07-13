@@ -15,9 +15,20 @@ class CreatePacksTable extends Migration
     {
         Schema::create('packs', function (Blueprint $table) {
             $table->id();
+            $table->string('pack_name', 30);
+            $table->tinyInteger('destinations_qnt');
+            $table->string('start_point', 50);
+            $table->smallInteger('price');
             $table->timestamps();
         });
     }
+
+    /* 
+    nome pacchetto
+    quantita destinazioni
+    punto di partenza
+    prezzo
+    */
 
     /**
      * Reverse the migrations.
