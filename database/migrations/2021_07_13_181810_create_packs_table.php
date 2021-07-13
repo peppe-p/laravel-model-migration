@@ -22,6 +22,17 @@ class CreatePacksTable extends Migration
             $table->timestamps();
         });
     }
+    /* 
+
+    QUERY
+    
+    INSERT INTO `packs`(`pack_name`, `destinations_qnt`, `start_point`, `price`) VALUES ('Viaggio Favoloso',18,'Roma',1599);
+INSERT INTO `packs`(`pack_name`, `destinations_qnt`, `start_point`, `price`) VALUES ('Veneziani',6,'Venezia',599);
+INSERT INTO `packs`(`pack_name`, `destinations_qnt`, `start_point`, `price`) VALUES ('Napoli 10',12,'Napoli',489);
+INSERT INTO `packs`(`pack_name`, `destinations_qnt`, `start_point`, `price`) VALUES ('Viaggio di Palermo',8,'Palermo',299);
+
+
+    */
 
     /* 
     nome pacchetto
