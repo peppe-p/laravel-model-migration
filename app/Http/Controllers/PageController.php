@@ -10,6 +10,6 @@ class PageController extends Controller
     public function home()
     {
         $packs = Pack::all();
-        return view('home');
+        return view('home', compact('packs'));
     }
 }
